@@ -69,12 +69,8 @@
 
                         <!-- App Search-->
                         <form class="app-search d-none d-md-block">
-                            <!-- <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Rezervasyon No,Müşteri Adı/Telefonu..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-success" type="button" id="button-addon2">Button</button>
-                            </div> -->
                             <div class="position-relative">
-                                <input type="text" class="form-control" placeholder="Search..." autocomplete="off"
+                                <input type="text" class="form-control" placeholder="Rezervasyon No, Müşteri Adı/Telefonu/.." autocomplete="off"
                                     id="search-options" value="">
                                 <span class="mdi mdi-magnify search-widget-icon"></span>
                                 <span class="mdi mdi-close-circle search-widget-icon search-widget-icon-close d-none"
@@ -165,6 +161,7 @@
                             </div>
                         </form>
                     </div>
+
                     <div class="d-flex align-items-center">
                         <div class="dropdown d-md-none topbar-head-dropdown header-item">
                             <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
@@ -186,6 +183,33 @@
                                 </form>
                             </div>
                         </div>
+                        <div class="dropdown topbar-head-dropdown ms-1 header-item">
+                            <button type="button" class="d-none d-xl-block btn btn-primary me-2"
+                                id="page-header-cart-dropdown" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                aria-haspopup="true" aria-expanded="false">
+                                Hatırlatmalar <span class=" badge bg-success ms-1">4</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-xl dropdown-menu-end p-0 dropdown-menu-cart"
+                                aria-labelledby="page-header-cart-dropdown">
+                                <div class="p-3 border-top-0 border-start-0 border-end-0 border-dashed border">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0 fs-16 fw-semibold"> Hatırlatmalar (4)</h6>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span class="badge badge-soft-warning fs-13"><span class="cartitem-badge">7</span>
+                                                items</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="d-none d-xl-block btn btn-primary me-2">
+                            Panel Chat <i class="ri-team-fill"></i>
+                        </button>
+                        <button type="button" class="d-none d-xl-block btn btn-primary">
+                            Extra TV <i class=" ri-mac-line"></i>
+                        </button>                        
                         <div class="ms-1 header-item d-none d-sm-flex">
                             <button type="button" class="btn btn-icon btn-topbar btn-ghost-secondary rounded-circle"
                                 data-toggle="fullscreen">
@@ -203,18 +227,47 @@
                                 aria-haspopup="true" aria-expanded="false">
                                 <span class="d-flex align-items-center">
                                     <img class="rounded-circle header-profile-user"
-                                        src="assets/images/users/avatar-1.jpg" alt="Header Avatar">
+                                        src="assets/images/users/avatar-7.jpg" alt="Header Avatar">
                                     <span class="text-start ms-xl-2">
-                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">Anna
-                                            Adame</span>
                                         <span
-                                            class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Founder</span>
+                                            class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">Hoşgeldiniz,</span>
+                                        <span class="d-none d-xl-inline-block ms-1 fw-medium user-name-text">
+                                            Serhat Üçek
+                                        </span>
+                                        <span class="d-none d-xl-block ms-1 fs-12 text-muted user-name-sub-text">
+                                            Yönetici
+                                        </span>
                                     </span>
                                 </span>
                             </button>
-                            <div class="dropdown-menu dropdown-menu-end">
+                            <div class="dropdown-menu dropdown-menu-end ">
                                 <!-- item-->
-                                <h6 class="dropdown-header">Welcome Anna!</h6>
+                                <h6 class="dropdown-header">Hoşgeldin Serhat</h6>
+                                <div class="dropdown-divider"></div>
+                                <div class="dropdown-item flex-col " href="pages-profile.html">
+                                    <div class="" href="#">
+                                        <i class="mdi mdi-information text-muted fs-16 align-middle me-1"></i>Satılan
+                                        Oda: <span class="align-middle">38</span>
+                                    </div>
+                                    <div class="" href="#">
+                                        <i class="mdi mdi-information text-muted fs-16 align-middle me-1"></i>Pax
+                                        Sayısı: <span class="align-middle">80+22</span>
+                                    </div>
+                                    <div class="" href="#">
+                                        <i class="mdi mdi-information text-muted fs-16 align-middle me-1"></i>Ciro
+                                        Miktarı: <span class="align-middle">15315451 ₺</span>
+                                    </div>
+                                    <div class="" href="#">
+                                        <i class="mdi mdi-information text-muted fs-16 align-middle me-1"></i>Konfirme
+                                        Miktarı: <span class="align-middle">1331545.8 ₺</span>
+                                    </div>
+                                    <div class="" href="#">
+                                        <i class="mdi mdi-information text-muted fs-16 align-middle me-1"></i>Kar
+                                        Miktarı: <span class="align-middle">851545.8 ₺</span>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="pages-profile.html"><i
                                         class="mdi mdi-account-circle text-muted fs-16 align-middle me-1"></i> <span
                                         class="align-middle">Profile</span></a>
@@ -228,16 +281,6 @@
                                         class="mdi mdi-lifebuoy text-muted fs-16 align-middle me-1"></i> <span
                                         class="align-middle">Help</span></a>
                                 <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="pages-profile.html"><i
-                                        class="mdi mdi-wallet text-muted fs-16 align-middle me-1"></i> <span
-                                        class="align-middle">Balance : <b>$5971.67</b></span></a>
-                                <a class="dropdown-item" href="pages-profile-settings.html"><span
-                                        class="badge bg-soft-success text-success mt-1 float-end">New</span><i
-                                        class="mdi mdi-cog-outline text-muted fs-16 align-middle me-1"></i> <span
-                                        class="align-middle">Settings</span></a>
-                                <a class="dropdown-item" href="auth-lockscreen-basic.html"><i
-                                        class="mdi mdi-lock text-muted fs-16 align-middle me-1"></i> <span
-                                        class="align-middle">Lock screen</span></a>
                                 <a class="dropdown-item" href="auth-logout-basic.html"><i
                                         class="mdi mdi-logout text-muted fs-16 align-middle me-1"></i> <span
                                         class="align-middle" data-key="t-logout">Logout</span></a>
@@ -819,9 +862,127 @@
         <!-- Start right Content here -->
         <!-- ============================================================== -->
         <div class="main-content">
-            
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0">Tabs</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xxl-6">
+                            <h5 class="mb-3">Default Tabs</h5>
+                            <div class="card">
+                                <div class="card-body">
+                                    <!-- <p class="text-muted">Use <code>nav-tabs</code> class to generate a default tabbed
+                                        interface.</p> -->
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs mb-3" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#home" role="tab"
+                                                aria-selected="false">
+                                                Talepler
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#product1" role="tab"
+                                                aria-selected="false">
+                                                Devam Eden
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#messages" role="tab"
+                                                aria-selected="false">
+                                                Konfirme Takip
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#settings" role="tab"
+                                                aria-selected="true">
+                                                Tamamlanmış
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#settings" role="tab"
+                                                aria-selected="true">
+                                                Değişiklik
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#settings" role="tab"
+                                                aria-selected="true">
+                                                İptaller
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#settings" role="tab"
+                                                aria-selected="true">
+                                                Kısmen
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-bs-toggle="tab" href="#settings" role="tab"
+                                                aria-selected="true">
+                                                Rezervasyon Arşivi
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content  text-muted">
+                                        <div class="tab-pane" id="home" role="tabpanel">
+                                            <h6>Graphic Design</h6>
+                                            <p class="mb-0">
+                                                They all have something to say beyond the words on the page. They can
+                                                come across as casual or neutral, exotic or graphic. That's why it's
+                                                important to think about your message, then choose a font that fits.
+                                                Cosby sweater eu banh mi, qui irure terry richardson ex squid.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane active" id="product1" role="tabpanel">
+                                            <h6>Product</h6>
+                                            <p class="mb-0">
+                                                You've probably heard that opposites attract. The same is true for
+                                                fonts. Don't be afraid to combine font styles that are different but
+                                                complementary, like sans serif with serif, short with tall, or
+                                                decorative with simple. Qui photo booth letterpress, commodo enim craft
+                                                beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane" id="messages" role="tabpanel">
+                                            <h6>Messages</h6>
+                                            <p class="mb-0">
+                                                Etsy mixtape wayfarers, ethical wes anderson tofu before they
+                                                sold out mcsweeney's organic lomo retro fanny pack lo-fi
+                                                farm-to-table readymade. Messenger bag gentrify pitchfork
+                                                tattooed craft beer, iphone skateboard locavore carles etsy
+                                                salvia banksy hoodie helvetica. DIY synth PBR banksy irony.
+                                            </p>
+                                        </div>
+                                        <div class="tab-pane" id="settings" role="tabpanel">
+                                            <h6>Settings</h6>
+                                            <p class="mb-0">
+                                                Trust fund seitan letterpress, keytar raw denim keffiyeh etsy
+                                                art party before they sold out master cleanse gluten-free squid
+                                                scenester freegan cosby sweater. Fanny pack portland seitan DIY,
+                                                art party locavore wolf cliche high life echo park Austin. Cred
+                                                vinyl keffiyeh DIY salvia PBR, banh mi before they sold out
+                                                farm-to-table VHS.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div><!-- end card-body -->
+                            </div><!-- end card -->
+                        </div><!--end col-->
+                    </div><!--end row-->
+                    <!-- end page title -->
+                </div>
+            </div>
         </div>
-        
+
         <!-- end main content-->
 
     </div>
