@@ -585,54 +585,6 @@
         <div class="main-content">
             <div class="page-content">
                 <div class="container-fluid">
-
-                    <!-- start page title -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="tab-content  text-muted page-title-box d-sm-flex align-items-center justify-content-between">
-                                <div class="tab-pane" id="demands" role="tabpanel">
-                                    <h6 class="mb-0">
-                                        Tab-1
-                                    </h6>
-                                </div>
-                                <div class="tab-pane" id="continued" role="tabpanel">
-                                    <h6 class="mb-0">
-                                        Tab-2
-                                    </h6>
-                                </div>
-                                <div class="tab-pane" id="confirmations" role="tabpanel">
-                                    <h6 class="mb-0">
-                                        Konfirme Bekleyen Rezervasyonlar
-                                    </h6>
-                                </div>
-                                <div class="tab-pane" id="completed" role="tabpanel">
-                                    <h6 class="mb-0">
-                                        Tab-4
-                                    </h6>
-                                </div>
-                                <div class="tab-pane" id="change" role="tabpanel">
-                                    <h6 class="mb-0">
-                                        Tab-5
-                                    </h6>
-                                </div>
-                                <div class="tab-pane" id="cancellations" role="tabpanel">
-                                    <h6 class="mb-0">
-                                        Tab-6
-                                    </h6>
-                                </div>
-                                <div class="tab-pane" id="partially" role="tabpanel">
-                                    <h6 class="mb-0">
-                                        Tab-7
-                                    </h6>
-                                </div>
-                                <div class="tab-pane" id="rezarchive" role="tabpanel">
-                                    <h6 class="mb-0">
-                                        Tab-8
-                                    </h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                     <div class="row">
                         <div class="col-xxl-12">
                             <div class="card">
@@ -640,13 +592,13 @@
                                     <!-- Nav tabs -->
                                     <ul class="nav nav-tabs mb-3" role="tablist">
                                         <li class="nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#demands" role="tab"
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#demands" role="tab"
                                                 aria-selected="false">
                                                 Talepler
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link active" data-bs-toggle="tab" href="#continued" role="tab"
+                                            <a class="nav-link" data-bs-toggle="tab" href="#continued" role="tab"
                                                 aria-selected="false">
                                                 Devam Eden
                                             </a>
@@ -690,17 +642,18 @@
                                     </ul>
                                     <!-- Tab panes -->
                                     <div class="tab-content  text-muted">
-                                        <div class="tab-pane" id="demands" role="tabpanel">
-                                            <h6 class="mb-0">
+                                        <div class="tab-pane active" id="demands" role="tabpanel">
+                                            <h5 class="mb-3">
                                                 Tab-1
-                                            </h6>
+                                            </h5>
                                         </div>
-                                        <div class="tab-pane active" id="continued" role="tabpanel">
-                                            <h6 class="mb-0">
+                                        <div class="tab-pane" id="continued" role="tabpanel">
+                                            <h5 class="mb-3">
                                                 Tab-2
-                                            </h6>
+                                            </h5>
                                         </div>
                                         <div class="tab-pane" id="confirmations" role="tabpanel">
+                                            <h5 class="mb-3">Konfirme Bekleyen Rezervasyonlar</h5>
                                             <h6 class="border-bottom pb-2">Detaylı Arama</h6>
                                             <div class="">
                                                 <div class="row">
@@ -716,7 +669,8 @@
                                                             Yap</button>
                                                     </div>
                                                     <!--end col-->
-                                                    <div class="col-md-4 col-xl-4 col-xxl-3 ms-auto mt-sm-2 mt-md-0 ">
+                                                    <div class="col-md-4 col-xl-4 col-xxl-3 ms-auto mt-sm-2 mt-md-0"
+                                                        id="select2_dropdown">
                                                         <label for="basiInput" class="form-label mt-sm-3">Tesis
                                                             Adı:</label>
                                                         <select class="form-select" data-placeholder="Choose anything"
@@ -756,7 +710,9 @@
                                                         </select>
 
                                                     </div>
-                                                    <div class="col-md-4 col-xl-4 col-xxl-3 ms-auto mt-sm-2 mt-md-0  ">
+
+                                                    <div class="col-md-4 col-xl-4 col-xxl-3 ms-auto mt-sm-2 mt-md-0"
+                                                        id="date_dropdown">
                                                         <label for="exampleInputdate"
                                                             class="form-label mt-sm-3">Rezervasyon Tarihi</label>
                                                         <div class="row">
@@ -799,6 +755,14 @@
                                                     <!--end col-->
                                                 </div>
                                                 <!--end row-->
+                                                <div class="row mt-3">
+                                                    <div class="col-3 ms-auto text-end">
+                                                        <button type="button"
+                                                            class="btn btn-primary waves-effect waves-light"
+                                                            id="filter_toggle">Diğer Filtreleme Seçenekleri
+                                                        </button>
+                                                    </div>
+                                                </div>
                                             </div>
                                             <h6 class="border-bottom pb-2 mt-3">Arama Sonuçları</h6>
                                             <div class="mt-2 mb-2">
@@ -817,29 +781,29 @@
                                             <div class="" id="wrapper"></div>
                                         </div>
                                         <div class="tab-pane" id="completed" role="tabpanel">
-                                            <h6 class="mb-0">
+                                            <h5 class="mb-3">
                                                 Tab-4
-                                            </h6>
+                                            </h5>
                                         </div>
                                         <div class="tab-pane" id="change" role="tabpanel">
-                                            <h6 class="mb-0">
+                                            <h5 class="mb-3">
                                                 Tab-5
-                                            </h6>
+                                            </h5>
                                         </div>
                                         <div class="tab-pane" id="cancellations" role="tabpanel">
-                                            <h6 class="mb-0">
+                                            <h5 class="mb-3">
                                                 Tab-6
-                                            </h6>
+                                            </h5>
                                         </div>
                                         <div class="tab-pane" id="partially" role="tabpanel">
-                                            <h6 class="mb-0">
+                                            <h5 class="mb-3">
                                                 Tab-7
-                                            </h6>
+                                            </h5>
                                         </div>
                                         <div class="tab-pane" id="rezarchive" role="tabpanel">
-                                            <h6 class="mb-0">
+                                            <h5 class="mb-3">
                                                 Tab-8
-                                            </h6>
+                                            </h5>
                                         </div>
 
 
